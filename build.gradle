@@ -105,7 +105,7 @@ jar {
                 'Implementation-Version': version,
                 "Implementation-Vendor": url,
                 'FMLCorePlugin': project.group + '.core.SmartMovingPlugin',
-                // 'FMLCorePluginContainsFMLMod': 'true', // Seems to cause mod to not load in dev environment
+                'FMLCorePluginContainsFMLMod': 'true', // Possibly causes mod to not load in dev environment, but results in "Duplicate mod" error on standalone server when commented out
                 'ForceLoadAsMod': true,
                 'TweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
                 'TweakOrder': 0,
